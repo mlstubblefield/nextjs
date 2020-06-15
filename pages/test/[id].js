@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  // fetch single post detail
+  console.log("pulling data for " + params.id);
   const response =  new Promise(function(resolve,reject){
     setTimeout(() => {
         console.log("done pulling data for " + params.id);
