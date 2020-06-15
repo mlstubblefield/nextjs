@@ -25,7 +25,7 @@ export async function getStaticProps({ params }) {
  });
   const id = await response;
   return {
-    props: id,
+    props: { id },
   }
 }
 
