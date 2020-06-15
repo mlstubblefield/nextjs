@@ -20,8 +20,9 @@ export async function getStaticProps({ params }) {
   // fetch single post detail
   const response =  new Promise(function(resolve,reject){
     setTimeout(() => {
+        console.log("done pulling data for " + params.id);
         resolve(params);
-    }, 1); // add an artifical delay to simulate web server response
+    }, 1000); // add an artifical delay to simulate web server response
  });
   const props = await response;
   return {
