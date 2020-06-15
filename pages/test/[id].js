@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 export async function getStaticPaths() {
 
-  const ids = [...Array(100000).keys()]
+  const ids = [...Array(10).keys()]
   return {
     paths: ids.map((id) => {
       return {
