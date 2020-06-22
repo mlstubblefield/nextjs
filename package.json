@@ -6,7 +6,7 @@
     "dev": "next",
     "build": "next build",
     "preexport": "npm run build",
-    "export": "next export --concurrency 100",
+    "export": "next export --threads 100",
     "prestart": "npm run export",
     "start": "serve out"
   },
