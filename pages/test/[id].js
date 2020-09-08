@@ -30,6 +30,10 @@ export async function getStaticProps({ params }) {
   }
 }
 
+export async function getServerSideProps({ params }) {
+  return getStaticProps(params)
+}
+
 export default function Post({ id }) {
   return (
     <main>
