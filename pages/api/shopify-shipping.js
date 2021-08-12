@@ -1,7 +1,7 @@
 
 
 export default function handler(req, res) {
-    console.log(req.body)
+    console.log(JSON.stringify(req.body, null, 2))
     res.status(200).json({
         "rates": [
           {
