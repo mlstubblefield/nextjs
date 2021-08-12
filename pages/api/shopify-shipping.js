@@ -36,7 +36,7 @@ export default function handler(req, res) {
                 "service_name": "Overnight",
                 "total_price": "30"
               }
-            ]
+            ] 
           })
     }else{
         res.status(200).json({
@@ -47,7 +47,7 @@ export default function handler(req, res) {
                 "max_delivery_date": getDate(5),
                 "min_delivery_date": getDate(4),
                 "service_code": "GND",
-                "service_name": "Ground",
+                "service_name": "Ground FedEx",
                 "total_price": "15"
               },
               {
