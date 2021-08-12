@@ -1,34 +1,39 @@
 
+const getDate = (numberOfDaysToAdd) => {
+    var someDate = new Date();
+    someDate.setDate(someDate.getDate() + numberOfDaysToAdd); 
+    return someDate
+}
 
 export default function handler(req, res) {
     console.log(JSON.stringify(req.body, null, 2))
-    if(req.body?.rate?.items?.some(x => x.sku == "matt12345")){
+    if(req.body?.rate?.origin?.city != "Port St. Lucie"){
         console.log('condition met')
         res.status(200).json({
             "rates": [
               {
                 "currency": "USD",
-                "description": "This is the fastest option by far",
-                "max_delivery_date": "2024-04-12 14:48:45 -0400",
-                "min_delivery_date": "2022-04-12 14:48:45 -0400",
-                "service_code": "ON",
-                "service_name": "Yolo",
+                "description": "Probably UPS",
+                "max_delivery_date": getDate(4),
+                "min_delivery_date": getDate(3),
+                "service_code": "GND",
+                "service_name": "Ground",
                 "total_price": "10"
               },
               {
                 "currency": "USD",
-                "max_delivery_date": "2024-04-22 14:48:45 -0400",
-                "min_delivery_date": "2022-04-11 14:48:45 -0400",
+                "max_delivery_date": getDate(2),
+                "min_delivery_date": getDate(2),
                 "service_code": "2D",
-                "service_name": "Yolo Overnight",
+                "service_name": "2 Day",
                 "total_price": "20"
               },
               {
                 "currency": "USD",
-                "max_delivery_date": "2024-04-14 14:48:45 -0400",
-                "min_delivery_date": "2022-04-12 14:48:45 -0400",
+                "max_delivery_date": getDate(1),
+                "min_delivery_date": getDate(1),
                 "service_code": "1D",
-                "service_name": "Yololololo",
+                "service_name": "Overnight",
                 "total_price": "30"
               }
             ]
@@ -38,27 +43,27 @@ export default function handler(req, res) {
             "rates": [
               {
                 "currency": "USD",
-                "description": "This is the fastest option by farrrrrrrrrrrrrrrrr",
-                "max_delivery_date": "2022-05-12 14:48:45 -0400",
-                "min_delivery_date": "2022-05-12 14:48:45 -0400",
-                "service_code": "ON",
-                "service_name": "Yolo",
+                "description": "Probably FedEx",
+                "max_delivery_date": getDate(5),
+                "min_delivery_date": getDate(4),
+                "service_code": "GND",
+                "service_name": "Ground",
                 "total_price": "15"
               },
               {
                 "currency": "USD",
-                "max_delivery_date": "2022-05-22 14:48:45 -0400",
-                "min_delivery_date": "2022-05-11 14:48:45 -0400",
+                "max_delivery_date": getDate(2),
+                "min_delivery_date": getDate(2),
                 "service_code": "2D",
-                "service_name": "Yolo Overnight",
+                "service_name": "2 Day",
                 "total_price": "25"
               },
               {
                 "currency": "USD",
-                "max_delivery_date": "2022-05-14 14:48:45 -0400",
-                "min_delivery_date": "2022-05-12 14:48:45 -0400",
+                "max_delivery_date": getDate(1),
+                "min_delivery_date": getDate(1),
                 "service_code": "1D",
-                "service_name": "Yololololo",
+                "service_name": "Overnight",
                 "total_price": "35"
               }
             ]
