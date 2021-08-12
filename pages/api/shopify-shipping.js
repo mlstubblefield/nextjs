@@ -6,6 +6,13 @@ const getDate = (numberOfDaysToAdd) => {
 }
 
 export default function handler(req, res) {
+
+    // shopify caches requests
+    // https://shopify.dev/api/admin/rest/reference/shipping-and-fulfillment/carrierservice#server-side-caching-of-requests-2021-07
+    // I like to just add 1 more quantity to every item in my cart to cache bust
+    // another option is to change your address a little bit
+    // or change the default shipping box slightly (since we don't use it)
+
     console.log(JSON.stringify(req.body, null, 2))
     if(req.body?.rate?.origin?.city != "Port St. Lucie"){
         console.log('condition met')
@@ -46,8 +53,8 @@ export default function handler(req, res) {
                 "description": "Probably FedEx",
                 "max_delivery_date": getDate(5),
                 "min_delivery_date": getDate(4),
-                "service_code": "GND",
-                "service_name": "Ground FedEx",
+                "service_code": "GND", // I THINK THE CODES MUST MATCH FOR MERGING TO APPLY!
+                "service_name": "Ground", // SERVICE NAMES MUST MATCH FOR MERGING TO APPLY! 
                 "total_price": "15"
               },
               {
