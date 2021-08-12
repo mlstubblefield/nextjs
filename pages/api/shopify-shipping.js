@@ -27,7 +27,7 @@ export default function handler(req, res) {
                 "currency": "USD",
                 "max_delivery_date": "2022-04-14 14:48:45 -0400",
                 "min_delivery_date": "2022-04-12 14:48:45 -0400",
-                "service_code": "1DDDDDDDD",
+                "service_code": "1D",
                 "service_name": "Yololololo",
                 "total_price": "3587"
               }
@@ -41,7 +41,7 @@ export default function handler(req, res) {
                 "description": "This is the fastest option by farrrrrrrrrrrrrrrrr",
                 "max_delivery_date": "2022-05-12 14:48:45 -0400",
                 "min_delivery_date": "2022-05-12 14:48:45 -0400",
-                "service_code": "ONASDASF",
+                "service_code": "ON",
                 "service_name": "YoloYOOLO",
                 "total_price": "1295"
               },
@@ -49,7 +49,7 @@ export default function handler(req, res) {
                 "currency": "USD",
                 "max_delivery_date": "2022-05-22 14:48:45 -0400",
                 "min_delivery_date": "2022-05-11 14:48:45 -0400",
-                "service_code": "2DDDD",
+                "service_code": "2D",
                 "service_name": "Yolo Overnightttt",
                 "total_price": "2934"
               },
@@ -57,7 +57,7 @@ export default function handler(req, res) {
                 "currency": "USD",
                 "max_delivery_date": "2022-05-14 14:48:45 -0400",
                 "min_delivery_date": "2022-05-12 14:48:45 -0400",
-                "service_code": "1DDDDDDDAFASFD",
+                "service_code": "1D",
                 "service_name": "Yolololollolololoo",
                 "total_price": "3587"
               }
