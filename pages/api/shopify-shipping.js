@@ -6,7 +6,7 @@ export default function handler(req, res) {
         res.status(200).json({
             "rates": [
               {
-                "currency": "CAD",
+                "currency": "USD",
                 "description": "This is the fastest option by far",
                 "max_delivery_date": "2022-04-12 14:48:45 -0400",
                 "min_delivery_date": "2022-04-12 14:48:45 -0400",
@@ -36,7 +36,7 @@ export default function handler(req, res) {
         res.status(200).json({
             "rates": [
               {
-                "currency": "CAD",
+                "currency": "USD",
                 "description": "This is the fastest option by farrrrrrrrrrrrrrrrr",
                 "max_delivery_date": "2022-05-12 14:48:45 -0400",
                 "min_delivery_date": "2022-05-12 14:48:45 -0400",
