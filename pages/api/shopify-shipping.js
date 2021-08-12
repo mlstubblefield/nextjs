@@ -13,7 +13,7 @@ export default function handler(req, res) {
                 "min_delivery_date": "2022-04-12 14:48:45 -0400",
                 "service_code": "ON",
                 "service_name": "Yolo",
-                "total_price": "1295"
+                "total_price": "10"
               },
               {
                 "currency": "USD",
@@ -21,7 +21,7 @@ export default function handler(req, res) {
                 "min_delivery_date": "2022-04-11 14:48:45 -0400",
                 "service_code": "2D",
                 "service_name": "Yolo Overnight",
-                "total_price": "2934"
+                "total_price": "20"
               },
               {
                 "currency": "USD",
@@ -29,7 +29,7 @@ export default function handler(req, res) {
                 "min_delivery_date": "2022-04-12 14:48:45 -0400",
                 "service_code": "1D",
                 "service_name": "Yololololo",
-                "total_price": "3587"
+                "total_price": "30"
               }
             ]
           })
@@ -43,7 +43,7 @@ export default function handler(req, res) {
                 "min_delivery_date": "2022-05-12 14:48:45 -0400",
                 "service_code": "ON",
                 "service_name": "YoloYOOLO",
-                "total_price": "1295"
+                "total_price": "15"
               },
               {
                 "currency": "USD",
@@ -51,7 +51,7 @@ export default function handler(req, res) {
                 "min_delivery_date": "2022-05-11 14:48:45 -0400",
                 "service_code": "2D",
                 "service_name": "Yolo Overnightttt",
-                "total_price": "2934"
+                "total_price": "25"
               },
               {
                 "currency": "USD",
@@ -59,7 +59,7 @@ export default function handler(req, res) {
                 "min_delivery_date": "2022-05-12 14:48:45 -0400",
                 "service_code": "1D",
                 "service_name": "Yolololollolololoo",
-                "total_price": "3587"
+                "total_price": "35"
               }
             ]
           })
