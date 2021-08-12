@@ -3,6 +3,7 @@
 export default function handler(req, res) {
     console.log(JSON.stringify(req.body, null, 2))
     if(req.body?.rate?.items?.some(x => x.sku == "matt12345")){
+        console.log('condition met')
         res.status(200).json({
             "rates": [
               {
