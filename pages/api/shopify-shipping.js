@@ -42,7 +42,7 @@ export default function handler(req, res) {
                 "max_delivery_date": "2022-05-12 14:48:45 -0400",
                 "min_delivery_date": "2022-05-12 14:48:45 -0400",
                 "service_code": "ON",
-                "service_name": "YoloYOOLO",
+                "service_name": "Yolo",
                 "total_price": "15"
               },
               {
@@ -50,7 +50,7 @@ export default function handler(req, res) {
                 "max_delivery_date": "2022-05-22 14:48:45 -0400",
                 "min_delivery_date": "2022-05-11 14:48:45 -0400",
                 "service_code": "2D",
-                "service_name": "Yolo Overnightttt",
+                "service_name": "Yolo Overnight",
                 "total_price": "25"
               },
               {
@@ -58,7 +58,7 @@ export default function handler(req, res) {
                 "max_delivery_date": "2022-05-14 14:48:45 -0400",
                 "min_delivery_date": "2022-05-12 14:48:45 -0400",
                 "service_code": "1D",
-                "service_name": "Yolololollolololoo",
+                "service_name": "Yololololo",
                 "total_price": "35"
               }
             ]
