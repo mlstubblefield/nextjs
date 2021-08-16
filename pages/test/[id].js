@@ -35,7 +35,7 @@ export default function Post({ id }) {
   return (
     <main>
       <Head>
-        <title>{id}</title>
+        <title>Hello #{id}</title>
       </Head>
 
       <h1>{id}</h1>
