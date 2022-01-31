@@ -5,13 +5,13 @@ export default function Slow(){
     const renders = useRef(0)
     useEffect(() => {
         const intervalId = setInterval(() => {
-            if(renders.current < 200){
+            if(renders.current < 60){
                 renders.current += 1
                 setState({...Datar})
             }else{
                 clearInterval(intervalId)
             }
-        }, 30) 
+        }, 100) 
     }, [])
 
     return <Thingy {...state} />
