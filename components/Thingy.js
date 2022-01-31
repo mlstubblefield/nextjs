@@ -348,7 +348,7 @@ export const Datar = {
 
 export default function Thingy(props) {
   // console.log("hi")
-    return <>{[...Array(1000)].map(() => <div>
-        {JSON.stringify(props,null,2)}
+    return <>{[...Array(100)].map(() => <div>
+        {JSON.stringify(props,null,2)}<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
     </div>)}</>
 }
