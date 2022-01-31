@@ -11,7 +11,7 @@ export default function Slow(){
             }else{
                 clearInterval(intervalId)
             }
-        }, 20)
+        }, 20) 
     }, [])
 
     return <Thingy {...state} />
