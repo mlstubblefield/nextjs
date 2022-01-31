@@ -5,7 +5,7 @@ export default function Slow(){
     const renders = useRef(0)
     useEffect(() => {
         const intervalId = setInterval(() => {
-            if(renders.current < 20){
+            if(renders.current < 100){
                 renders.current += 1
                 setState({...Datar})
             }else{
